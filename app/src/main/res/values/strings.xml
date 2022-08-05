@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">BreakIce</string>
+    <string name="title_home">发现</string>
+    <string name="title_dashboard">广场</string>
+    <string name="title_notifications">消息</string>
+    <string name="title_mine">我的</string>
+</resources>
