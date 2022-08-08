@@ -23,7 +23,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.15"
-            android:contentDescription="avatar" />
+            android:contentDescription="Avatar" />
 
         <TextView
             android:id="@+id/mine_username"
@@ -84,288 +84,97 @@
                 android:gravity="center"
                 android:orientation="vertical">
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                    <LinearLayout
+                    <TextView
+                        android:id="@+id/post_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="30dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/like_text"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="发帖" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="发帖" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="8"
-                            android:textColor="@color/black"
-                            android:textSize="24sp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
+                    <TextView
+                        android:id="@+id/post_number"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="30dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
+                        app:layout_constraintStart_toStartOf="@id/post_text"
+                        app:layout_constraintEnd_toEndOf="@id/post_text"
+                        app:layout_constraintTop_toBottomOf="@id/post_text"
+                        android:text="8"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="点赞" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="8"
-                            android:textColor="@color/black"
-                            android:textSize="24sp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
+                    <TextView
+                        android:id="@+id/like_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="30dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
+                        app:layout_constraintStart_toEndOf="@id/post_text"
+                        app:layout_constraintEnd_toStartOf="@id/follow_text"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="点赞" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="关注" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="8"
-                            android:textColor="@color/black"
-                            android:textSize="24sp" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
+                    <TextView
+                        android:id="@+id/like_number"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginHorizontal="30dp"
-                        android:gravity="center"
-                        android:orientation="vertical">
+                        android:text="8"
+                        app:layout_constraintStart_toStartOf="@id/like_text"
+                        app:layout_constraintEnd_toEndOf="@id/like_text"
+                        app:layout_constraintTop_toBottomOf="@id/like_text"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="粉丝" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="8"
-                            android:textColor="@color/black"
-                            android:textSize="24sp" />
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="30dp"
-                    android:layout_marginVertical="10dp"
-                    app:cardCornerRadius="16dp"
-                    app:cardElevation="16dp"
-                    app:contentPadding="12dp">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_height="match_parent"
-                        android:layout_width="match_parent">
-
-                        <ImageView
-                            android:id="@+id/imageView"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:src="@drawable/ic_user"
-                            android:layout_marginHorizontal="10dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
-                            android:id="@+id/card_username"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="User"
-                            android:textColor="@color/black"
-                            android:textSize="16sp"
-                            android:textStyle="bold"
-                            android:layout_marginHorizontal="10dp"
-                            app:layout_constraintStart_toEndOf="@id/imageView"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
-                        android:id="@+id/post_time"
+                    <TextView
+                        android:id="@+id/follow_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="18/01/22 17:34"
-                        android:layout_marginHorizontal="10dp"
+                        app:layout_constraintStart_toEndOf="@id/like_text"
+                        app:layout_constraintEnd_toStartOf="@id/fans_text"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="关注" />
+
+                    <TextView
+                        android:id="@+id/follow_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8"
+                        app:layout_constraintStart_toStartOf="@id/follow_text"
+                        app:layout_constraintEnd_toEndOf="@id/follow_text"
+                        app:layout_constraintTop_toBottomOf="@id/follow_text"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/fans_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/follow_text"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="粉丝" />
 
-                        <TextView
-                            android:id="@+id/post_content"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Hello, World!"
-                            android:textSize="24sp"
-                            android:layout_marginHorizontal="10dp"
-                            app:layout_constraintStart_toEndOf="@id/imageView"
-                            app:layout_constraintTop_toBottomOf="@id/card_username" />
+                    <TextView
+                        android:id="@+id/fans_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="8"
+                        app:layout_constraintStart_toStartOf="@id/fans_text"
+                        app:layout_constraintEnd_toEndOf="@id/fans_text"
+                        app:layout_constraintTop_toBottomOf="@id/fans_text"
+                        android:textColor="@color/black"
+                        android:textSize="24sp" />
 
-                        <com.google.android.material.chip.Chip
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:layout_constraintTop_toBottomOf="@id/post_content"
-                            app:layout_constraintStart_toStartOf="@id/post_content"
-                            android:text="#话题" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
 
-                    </androidx.constraintlayout.widget.ConstraintLayout>
+                <include layout="@layout/card_message" />
 
-                </androidx.cardview.widget.CardView>
+                <include layout="@layout/card_message" />
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="30dp"
-                    android:layout_marginVertical="10dp"
-                    app:cardCornerRadius="16dp"
-                    app:cardElevation="16dp"
-                    app:contentPadding="12dp">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_height="match_parent"
-                        android:layout_width="match_parent">
-
-                        <ImageView
-                            android:id="@+id/imageView2"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:src="@drawable/ic_user"
-                            android:layout_marginHorizontal="10dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
-                            android:id="@+id/card_username2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="User"
-                            android:textColor="@color/black"
-                            android:textSize="16sp"
-                            android:textStyle="bold"
-                            android:layout_marginHorizontal="10dp"
-                            app:layout_constraintStart_toEndOf="@id/imageView2"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
-                            android:id="@+id/post_time2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="18/01/22 17:34"
-                            android:layout_marginHorizontal="10dp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
-                            android:id="@+id/post_content2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Hello, World!"
-                            android:textSize="24sp"
-                            android:layout_marginHorizontal="10dp"
-                            app:layout_constraintStart_toEndOf="@id/imageView2"
-                            app:layout_constraintTop_toBottomOf="@id/card_username2" />
-
-                        <com.google.android.material.chip.Chip
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:layout_constraintTop_toBottomOf="@id/post_content2"
-                            app:layout_constraintStart_toStartOf="@id/post_content2"
-                            android:text="#话题" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="30dp"
-                    android:layout_marginVertical="10dp"
-                    app:cardCornerRadius="16dp"
-                    app:cardElevation="16dp"
-                    app:contentPadding="12dp">
-
-                    <androidx.constraintlayout.widget.ConstraintLayout
-                        android:layout_height="match_parent"
-                        android:layout_width="match_parent">
-
-                        <ImageView
-                            android:id="@+id/imageView3"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:src="@drawable/ic_user"
-                            android:layout_marginHorizontal="10dp"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
-                            android:id="@+id/card_username3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="User"
-                            android:textColor="@color/black"
-                            android:textSize="16sp"
-                            android:textStyle="bold"
-                            android:layout_marginHorizontal="10dp"
-                            app:layout_constraintStart_toEndOf="@id/imageView3"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
-                            android:id="@+id/post_time3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="18/01/22 17:34"
-                            android:layout_marginHorizontal="10dp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
-                            android:id="@+id/post_content3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Hello, World!"
-                            android:textSize="24sp"
-                            android:layout_marginHorizontal="10dp"
-                            app:layout_constraintStart_toEndOf="@id/imageView3"
-                            app:layout_constraintTop_toBottomOf="@id/card_username3" />
-
-                        <com.google.android.material.chip.Chip
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            app:layout_constraintTop_toBottomOf="@id/post_content3"
-                            app:layout_constraintStart_toStartOf="@id/post_content3"
-                            android:text="#话题" />
-
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-                </androidx.cardview.widget.CardView>
+                <include layout="@layout/card_message" />
 
             </LinearLayout>
 
