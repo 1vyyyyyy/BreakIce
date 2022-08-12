@@ -124,6 +124,7 @@
             app:layout_constraintBottom_toBottomOf="@id/card_comment_button"
             android:layout_marginHorizontal="4dp" />
 
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.cardview.widget.CardView>
