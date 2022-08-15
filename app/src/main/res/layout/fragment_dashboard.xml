@@ -213,10 +213,10 @@
         android:id="@+id/searchView"
         android:layout_width="16dp"
         android:layout_height="22dp"
-        android:layout_marginBottom="694dp"
-        app:layout_constraintBottom_toTopOf="@+id/text_dashboard"
+        android:layout_marginTop="54dp"
         app:layout_constraintEnd_toEndOf="@+id/chip4"
-        app:layout_constraintHorizontal_bias="0.059"
-        app:layout_constraintStart_toStartOf="@+id/chip4" />
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="@+id/chip4"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
