@@ -3,12 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/hp/Desktop/BreakIce/app/src/main/res/drawable/ic_@_black_24dp.xml" value="0.205" />
+        <entry key="..\:/Users/hp/Desktop/BreakIce/app/src/main/res/drawable/ic_aite_black_24dp.xml" value="0.1" />
+        <entry key="..\:/Users/hp/Desktop/BreakIce/app/src/main/res/drawable/ic_comment_black_24dp.xml" value="0.205" />
         <entry key="..\:/Users/hp/Desktop/BreakIce/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
         <entry key="..\:/Users/hp/Desktop/BreakIce/app/src/main/res/layout/card_message.xml" value="0.35052083333333334" />
         <entry key="..\:/Users/hp/Desktop/BreakIce/app/src/main/res/layout/fragment_dashboard.xml" value="0.2" />
         <entry key="..\:/Users/hp/Desktop/BreakIce/app/src/main/res/layout/fragment_home.xml" value="0.35052083333333334" />
         <entry key="..\:/Users/hp/Desktop/BreakIce/app/src/main/res/layout/fragment_mine.xml" value="0.35052083333333334" />
-        <entry key="..\:/Users/hp/Desktop/BreakIce/app/src/main/res/layout/fragment_notifications.xml" value="0.35052083333333334" />
+        <entry key="..\:/Users/hp/Desktop/BreakIce/app/src/main/res/layout/fragment_notifications.xml" value="0.264" />
         <entry key="..\:/Users/hp/Desktop/BreakIce/app/src/main/res/menu/bottom_nav_menu.xml" value="0.36614583333333334" />
       </map>
     </option>
