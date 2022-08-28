@@ -22,7 +22,7 @@
                 android:layout_height="match_parent">
 
                 <com.google.android.material.chip.Chip
-                    android:id="@+id/chip4"
+                    android:id="@+id/search_area"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="16dp"
@@ -33,14 +33,14 @@
                     app:layout_constraintVertical_bias="0.071" />
 
                 <SearchView
-                    android:id="@+id/searchView"
+                    android:id="@+id/search_image"
                     android:layout_width="16dp"
                     android:layout_height="22dp"
                     android:layout_marginTop="12dp"
-                    app:layout_constraintEnd_toEndOf="@+id/chip4"
+                    app:layout_constraintEnd_toEndOf="@+id/search_area"
                     app:layout_constraintHorizontal_bias="0.077"
-                    app:layout_constraintStart_toStartOf="@+id/chip4"
-                    app:layout_constraintTop_toTopOf="@+id/chip4" />
+                    app:layout_constraintStart_toStartOf="@+id/search_area"
+                    app:layout_constraintTop_toTopOf="@+id/search_area" />
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardView"
@@ -48,123 +48,123 @@
                     android:layout_height="610dp"
                     android:layout_marginTop="10dp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/chip4">
+                    app:layout_constraintTop_toBottomOf="@+id/search_area">
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
                         android:layout_height="718dp">
 
                         <TextView
-                            android:id="@+id/textView"
+                            android:id="@+id/tuijian_text"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:text="推荐"
                             android:textColor="@color/black"
                             android:textSize="16sp"
-                            app:layout_constraintEnd_toEndOf="@id/floatingActionButton7"
-                            app:layout_constraintStart_toStartOf="@id/floatingActionButton7"
-                            app:layout_constraintTop_toBottomOf="@+id/floatingActionButton7" />
+                            app:layout_constraintEnd_toEndOf="@id/tuijian_button"
+                            app:layout_constraintStart_toStartOf="@id/tuijian_button"
+                            app:layout_constraintTop_toBottomOf="@+id/tuijian_button" />
 
                         <TextView
-                            android:id="@+id/textView2"
+                            android:id="@+id/guanzhu_text"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="关注"
                             android:textColor="@color/black"
                             android:textSize="16sp"
-                            app:layout_constraintEnd_toEndOf="@id/floatingActionButton8"
-                            app:layout_constraintStart_toStartOf="@id/floatingActionButton8"
-                            app:layout_constraintTop_toTopOf="@id/textView" />
+                            app:layout_constraintEnd_toEndOf="@id/guanzhu_button"
+                            app:layout_constraintStart_toStartOf="@id/guanzhu_button"
+                            app:layout_constraintTop_toTopOf="@id/tuijian_text" />
 
                         <TextView
-                            android:id="@+id/textView3"
+                            android:id="@+id/fabu_text"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="发布"
                             android:textColor="@color/black"
                             android:textSize="16sp"
-                            app:layout_constraintEnd_toEndOf="@id/floatingActionButton9"
-                            app:layout_constraintStart_toStartOf="@id/floatingActionButton9"
-                            app:layout_constraintTop_toTopOf="@id/textView2" />
+                            app:layout_constraintEnd_toEndOf="@id/fabu_button"
+                            app:layout_constraintStart_toStartOf="@id/fabu_button"
+                            app:layout_constraintTop_toTopOf="@id/guanzhu_text" />
 
                         <TextView
-                            android:id="@+id/textView4"
+                            android:id="@+id/remen_text"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="热门"
                             android:textColor="@color/black"
                             android:textSize="16sp"
-                            app:layout_constraintEnd_toEndOf="@id/floatingActionButton10"
-                            app:layout_constraintStart_toStartOf="@id/floatingActionButton10"
-                            app:layout_constraintTop_toTopOf="@id/textView3" />
+                            app:layout_constraintEnd_toEndOf="@id/remen_button"
+                            app:layout_constraintStart_toStartOf="@id/remen_button"
+                            app:layout_constraintTop_toTopOf="@id/fabu_text" />
 
                         <TextView
-                            android:id="@+id/textView5"
+                            android:id="@+id/huati_text"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="话题"
                             android:textColor="@color/black"
                             android:textSize="16sp"
-                            app:layout_constraintEnd_toEndOf="@id/floatingActionButton11"
-                            app:layout_constraintStart_toStartOf="@id/floatingActionButton11"
-                            app:layout_constraintTop_toTopOf="@id/textView4" />
+                            app:layout_constraintEnd_toEndOf="@id/huati_button"
+                            app:layout_constraintStart_toStartOf="@id/huati_button"
+                            app:layout_constraintTop_toTopOf="@id/remen_text" />
 
                         <com.google.android.material.floatingactionbutton.FloatingActionButton
-                            android:id="@+id/floatingActionButton7"
+                            android:id="@+id/tuijian_button"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="28dp"
                             android:clickable="true"
                             android:src="@drawable/ic_like_black_24dp"
                             app:backgroundTint="@android:color/holo_blue_light"
-                            app:layout_constraintEnd_toStartOf="@+id/floatingActionButton8"
+                            app:layout_constraintEnd_toStartOf="@+id/guanzhu_button"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toTopOf="parent" />
 
                         <com.google.android.material.floatingactionbutton.FloatingActionButton
-                            android:id="@+id/floatingActionButton8"
+                            android:id="@+id/guanzhu_button"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:clickable="true"
                             android:src="@drawable/ic_focus_black_24dp"
                             app:backgroundTint="@android:color/holo_blue_light"
-                            app:layout_constraintEnd_toStartOf="@+id/floatingActionButton9"
-                            app:layout_constraintStart_toEndOf="@id/floatingActionButton7"
-                            app:layout_constraintTop_toTopOf="@id/floatingActionButton7" />
+                            app:layout_constraintEnd_toStartOf="@+id/fabu_button"
+                            app:layout_constraintStart_toEndOf="@id/tuijian_button"
+                            app:layout_constraintTop_toTopOf="@id/tuijian_button" />
 
                         <com.google.android.material.floatingactionbutton.FloatingActionButton
-                            android:id="@+id/floatingActionButton9"
+                            android:id="@+id/fabu_button"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:clickable="true"
                             android:src="@drawable/ic_publish_black_24dp"
                             app:backgroundTint="@android:color/holo_blue_light"
-                            app:layout_constraintEnd_toStartOf="@id/floatingActionButton10"
-                            app:layout_constraintStart_toEndOf="@id/floatingActionButton8"
-                            app:layout_constraintTop_toTopOf="@id/floatingActionButton8" />
+                            app:layout_constraintEnd_toStartOf="@id/remen_button"
+                            app:layout_constraintStart_toEndOf="@id/guanzhu_button"
+                            app:layout_constraintTop_toTopOf="@id/guanzhu_button" />
 
                         <com.google.android.material.floatingactionbutton.FloatingActionButton
-                            android:id="@+id/floatingActionButton10"
+                            android:id="@+id/remen_button"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:clickable="true"
                             android:src="@drawable/ic_fire_black_24dp"
                             app:backgroundTint="@android:color/holo_blue_light"
-                            app:layout_constraintEnd_toStartOf="@id/floatingActionButton11"
-                            app:layout_constraintStart_toEndOf="@+id/floatingActionButton9"
-                            app:layout_constraintTop_toTopOf="@id/floatingActionButton9" />
+                            app:layout_constraintEnd_toStartOf="@id/huati_button"
+                            app:layout_constraintStart_toEndOf="@+id/fabu_button"
+                            app:layout_constraintTop_toTopOf="@id/fabu_button" />
 
                         <com.google.android.material.floatingactionbutton.FloatingActionButton
-                            android:id="@+id/floatingActionButton11"
+                            android:id="@+id/huati_button"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:clickable="true"
                             android:src="@drawable/ic_topic_black_24dp"
                             app:backgroundTint="@android:color/holo_blue_light"
                             app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toEndOf="@+id/floatingActionButton10"
-                            app:layout_constraintTop_toTopOf="@id/floatingActionButton10" />
+                            app:layout_constraintStart_toEndOf="@+id/remen_button"
+                            app:layout_constraintTop_toTopOf="@id/remen_button" />
 
                         <include
                             android:id="@+id/include2"
@@ -175,7 +175,7 @@
                             android:layout_marginTop="16dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView" />
+                            app:layout_constraintTop_toBottomOf="@+id/tuijian_text" />
 
                         <include
                             android:id="@+id/include3"

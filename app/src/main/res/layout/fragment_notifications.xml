@@ -14,11 +14,12 @@
         android:orientation="vertical">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/aite_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatingActionButton3"
+                android:id="@+id/aite_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -31,7 +32,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/aite_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -40,10 +41,10 @@
                 android:textColor="@color/black"
                 android:textSize="22sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/floatingActionButton3" />
+                app:layout_constraintStart_toEndOf="@+id/aite_button" />
 
             <ImageButton
-                android:id="@+id/imageButton10"
+                android:id="@+id/aite_more"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginEnd="16dp"
@@ -56,7 +57,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <View
-            android:id="@+id/divider"
+            android:id="@+id/aite_divider"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="16dp"
@@ -66,6 +67,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/comment_layout"
             android:layout_width="429dp"
             android:layout_height="82dp"
             android:layout_marginStart="16dp"
@@ -75,7 +77,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatingActionButton4"
+                android:id="@+id/comment_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
@@ -86,7 +88,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView7"
+                android:id="@+id/comment_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -95,14 +97,14 @@
                 android:textColor="@color/black"
                 android:textSize="22sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/floatingActionButton4" />
+                app:layout_constraintStart_toEndOf="@+id/comment_button" />
 
             <ImageButton
-                android:id="@+id/imageButton11"
+                android:id="@+id/comment_more"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="17dp"
+                android:layout_marginEnd="52dp"
+                android:layout_marginBottom="16dp"
                 android:background="@android:drawable/screen_background_light"
                 android:src="@drawable/ic_right_black_24dp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -110,7 +112,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <View
-            android:id="@+id/divider2"
+            android:id="@+id/comment_divider"
             android:layout_width="match_parent"
             android:layout_height="1.4dp"
             android:background="?android:attr/listDivider"
@@ -120,11 +122,12 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/zan_layout"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatingActionButton6"
+                android:id="@+id/zan_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="19dp"
@@ -136,7 +139,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/zan_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -145,10 +148,10 @@
                 android:textColor="@color/black"
                 android:textSize="22sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/floatingActionButton6" />
+                app:layout_constraintStart_toEndOf="@+id/zan_button" />
 
             <ImageButton
-                android:id="@+id/imageButton12"
+                android:id="@+id/zan_more"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginEnd="16dp"
@@ -160,7 +163,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <View
-            android:id="@+id/divider3"
+            android:id="@+id/zan_divider"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginTop="16dp"
@@ -170,11 +173,12 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/message_layout1"
             android:layout_width="459dp"
             android:layout_height="83dp">
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/friend_avatar1"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="22dp"
@@ -184,7 +188,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/friend_id1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -193,10 +197,10 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView3" />
+                app:layout_constraintStart_toEndOf="@+id/friend_avatar1" />
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/friend_message1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -204,25 +208,26 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/imageView3"
+                app:layout_constraintStart_toEndOf="@+id/friend_avatar1"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.737" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <View
-            android:id="@+id/divider4"
+            android:id="@+id/message_divider1"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="?android:attr/listDivider" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/message_layout2"
             android:layout_width="459dp"
             android:layout_height="83dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
             <ImageView
-                android:id="@+id/imageView4"
+                android:id="@+id/friend_avatar2"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="22dp"
@@ -232,7 +237,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/friend_id2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="88dp"
@@ -245,7 +250,7 @@
                 app:layout_constraintVertical_bias="0.262" />
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/friend_message2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="88dp"
@@ -258,7 +263,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <View
-            android:id="@+id/divider5"
+            android:id="@+id/message_divider2"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:background="?android:attr/listDivider" />
