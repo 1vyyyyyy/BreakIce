@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray">
+    android:background="@color/white">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -18,12 +18,12 @@
             android:layout_height="80dp"
             android:layout_marginStart="36dp"
             android:layout_marginTop="64dp"
+            android:contentDescription="Avatar"
             android:src="@drawable/ic_user_black_24dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.15"
-            android:contentDescription="Avatar" />
+            app:layout_constraintVertical_bias="0.15" />
 
         <TextView
             android:id="@+id/mine_username"
@@ -43,13 +43,13 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="36dp"
             android:text="编辑"
-            android:textStyle="bold"
             android:textColor="@color/black"
+            android:textStyle="bold"
+            app:backgroundTint="@color/white"
             app:cornerRadius="20sp"
             app:layout_constraintBottom_toBottomOf="@+id/mine_avatar"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/mine_avatar"
-            app:backgroundTint="@color/white" />
+            app:layout_constraintTop_toTopOf="@+id/mine_avatar" />
 
         <com.google.android.material.chip.ChipGroup
             android:id="@+id/chip_group"
@@ -95,81 +95,81 @@
                         android:id="@+id/post_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:layout_constraintStart_toStartOf="parent"
+                        android:text="发帖"
                         app:layout_constraintEnd_toStartOf="@id/like_text"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:text="发帖" />
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         android:id="@+id/post_number"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:layout_constraintStart_toStartOf="@id/post_text"
-                        app:layout_constraintEnd_toEndOf="@id/post_text"
-                        app:layout_constraintTop_toBottomOf="@id/post_text"
                         android:text="8"
                         android:textColor="@color/black"
-                        android:textSize="24sp" />
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="@id/post_text"
+                        app:layout_constraintStart_toStartOf="@id/post_text"
+                        app:layout_constraintTop_toBottomOf="@id/post_text" />
 
                     <TextView
                         android:id="@+id/like_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:layout_constraintStart_toEndOf="@id/post_text"
+                        android:text="点赞"
                         app:layout_constraintEnd_toStartOf="@id/follow_text"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:text="点赞" />
+                        app:layout_constraintStart_toEndOf="@id/post_text"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         android:id="@+id/like_number"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="8"
-                        app:layout_constraintStart_toStartOf="@id/like_text"
-                        app:layout_constraintEnd_toEndOf="@id/like_text"
-                        app:layout_constraintTop_toBottomOf="@id/like_text"
                         android:textColor="@color/black"
-                        android:textSize="24sp" />
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="@id/like_text"
+                        app:layout_constraintStart_toStartOf="@id/like_text"
+                        app:layout_constraintTop_toBottomOf="@id/like_text" />
 
                     <TextView
                         android:id="@+id/follow_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:layout_constraintStart_toEndOf="@id/like_text"
+                        android:text="关注"
                         app:layout_constraintEnd_toStartOf="@id/fans_text"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:text="关注" />
+                        app:layout_constraintStart_toEndOf="@id/like_text"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         android:id="@+id/follow_number"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="8"
-                        app:layout_constraintStart_toStartOf="@id/follow_text"
-                        app:layout_constraintEnd_toEndOf="@id/follow_text"
-                        app:layout_constraintTop_toBottomOf="@id/follow_text"
                         android:textColor="@color/black"
-                        android:textSize="24sp" />
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="@id/follow_text"
+                        app:layout_constraintStart_toStartOf="@id/follow_text"
+                        app:layout_constraintTop_toBottomOf="@id/follow_text" />
 
                     <TextView
                         android:id="@+id/fans_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:layout_constraintStart_toEndOf="@id/follow_text"
+                        android:text="粉丝"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        android:text="粉丝" />
+                        app:layout_constraintStart_toEndOf="@id/follow_text"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
                         android:id="@+id/fans_number"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="8"
-                        app:layout_constraintStart_toStartOf="@id/fans_text"
-                        app:layout_constraintEnd_toEndOf="@id/fans_text"
-                        app:layout_constraintTop_toBottomOf="@id/fans_text"
                         android:textColor="@color/black"
-                        android:textSize="24sp" />
+                        android:textSize="24sp"
+                        app:layout_constraintEnd_toEndOf="@id/fans_text"
+                        app:layout_constraintStart_toStartOf="@id/fans_text"
+                        app:layout_constraintTop_toBottomOf="@id/fans_text" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 

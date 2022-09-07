@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/gray"
+    android:background="@color/white"
     tools:context=".ui.dashboard.DashboardFragment">
 
     <ScrollView
@@ -43,7 +43,7 @@
                     app:layout_constraintTop_toTopOf="@+id/search_area" />
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/cardView"
+                    android:id="@+id/main_card"
                     android:layout_width="411dp"
                     android:layout_height="610dp"
                     android:layout_marginTop="10dp"
